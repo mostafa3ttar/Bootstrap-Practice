@@ -17,7 +17,46 @@
 <body>
     <!-- our code here -->
 
-    <h1>BootStrap Grid System</h1>
+    <h1 class="text-center">BootStrap 5</h1>
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" style="margin-left: 15px;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#home">Home</a></li>
+            <li class="breadcrumb-item"><a href="#about">About</a></li>
+            <li class="breadcrumb-item"><a href="#contact">Contact Us</a> </li>
+        </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item text-end"><a href="#login">Login</a> </li>
+        </ol>
+    </nav>
+
+    <div class="container mb-5" style="margin-left: 0;">
+        <!-- Large button groups (default and split) -->
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Large button
+            </button>
+            <ul class="dropdown-menu">
+                <a class="dropdown-item" href="">Action 1</a>
+                <a class="dropdown-item" href="">Action 2</a>
+                <a class="dropdown-item" href="">Action 3</a>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg" type="button">
+                Large split button
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                ...
+            </ul>
+        </div>
+    </div>
     <!-- 
     xs(col) < 576px
     sm >=  576px
@@ -54,24 +93,23 @@
         </div>
 
     </div>
-
-    <button class="btn btn-primary">Primary</button>
-    <button class="btn btn-outline-primary">Primary</button>
-
-    <br>
-    <br>
-    <br>
-
-    <div class=" btn-group btn-group-lg mb-5">
-        <button class="btn btn-primary">Left</button>
-        <button class="btn btn-primary">Center</button>
-        <button class="btn btn-primary">Right</button>
+    <div class="container my-5 text-center">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-outline-primary">Primary</button>
     </div>
-    <div class=" btn-group mb-5">
-        <button class="btn btn-outline-primary">Left</button>
-        <button class="btn btn-outline-primary">Center</button>
-        <button class="btn btn-outline-primary">Right</button>
+    <div class="container mb-5 d-flex justify-content-between">
+        <div class=" btn-group btn-group-lg">
+            <button class="btn btn-primary">Left</button>
+            <button class="btn btn-primary">Center</button>
+            <button class="btn btn-primary">Right</button>
+        </div>
+        <div class=" btn-group">
+            <button class="btn btn-outline-primary">Left</button>
+            <button class="btn btn-outline-primary">Center</button>
+            <button class="btn btn-outline-primary">Right</button>
+        </div>
     </div>
+
 
     <div class="row bg-dark p-1">
         <div class="col-8"><button class="btn btn-primary">click</button></div>
@@ -87,9 +125,49 @@
         <div class="col-4 text-end"><button class="btn btn-primary">click</button></div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 d-flex gap-5">
 
-        <div class="card" style="width: 15rem;">
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/ims/iphone.jpg" alt="">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-warning">Iphone X</h5>
+                <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                    nesciunt labore
+                    minima molestias officia voluptates nam.</p>
+                <a href="#" class="btn btn-danger">See Details</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/ims/iphone.jpg" alt="">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-warning">Iphone X</h5>
+                <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                    nesciunt labore
+                    minima molestias officia voluptates nam.</p>
+                <a href="#" class="btn btn-danger">See Details</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/ims/iphone.jpg" alt="">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-warning">Iphone X</h5>
+                <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                    nesciunt labore
+                    minima molestias officia voluptates nam.</p>
+                <a href="#" class="btn btn-danger">See Details</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="assets/ims/iphone.jpg" alt="">
+            <div class="card-body bg-dark">
+                <h5 class="card-title text-warning">Iphone X</h5>
+                <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                    nesciunt labore
+                    minima molestias officia voluptates nam.</p>
+                <a href="#" class="btn btn-danger">See Details</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
             <img class="card-img-top" src="assets/ims/iphone.jpg" alt="">
             <div class="card-body bg-dark">
                 <h5 class="card-title text-warning">Iphone X</h5>
@@ -136,30 +214,65 @@
         </button>
     </div>
 
-    <!-- Large button groups (default and split) -->
-    <div class="container mt-5">
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Large button
+    <div class="container my-5" style="margin-left: 0;">
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+            </a>
+            <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-bs-target
             </button>
-            <ul class="dropdown-menu">
-                ...
-            </ul>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                the user activates the relevant trigger.
+            </div>
         </div>
-        <div class="btn-group">
-            <button class="btn btn-secondary btn-lg" type="button">
-                Large split button
-            </button>
-            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu">
-                ...
-            </ul>
-        </div>
+
     </div>
+
+    <div class="container mb-5" id="login">
+        <form class="w-50">
+            <div class="form-group">
+                <label for="">Email Address</label>
+                <input class="form-control" type="email" placeholder="Email Addrees">
+                <small class="form-text text-muted">We will never share your email with any one</small>
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <label for="">Check Me Out</label>
+                <input class="form-check-input" type="checkbox">
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <section id="home">
+        <h1 class="text-center text-primary">Home</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eum officia, error maxime quos impedit id
+            sequi. Exercitationem fugit, libero maxime dolorum temporibus accusantium ratione debitis iste commodi
+            voluptatem excepturi.</p>
+    </section>
+    <section id="contact">
+        <h1 class="text-center text-info">Contact</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eum officia, error maxime quos impedit id
+            sequi. Exercitationem fugit, libero maxime dolorum temporibus accusantium ratione debitis iste commodi
+            voluptatem excepturi.</p>
+    </section>
+    <section id="about">
+        <h1 class="text-center text-secondary">About</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eum officia, error maxime quos impedit id
+            sequi. Exercitationem fugit, libero maxime dolorum temporibus accusantium ratione debitis iste commodi
+            voluptatem excepturi.</p>
+    </section>
+
     <!-- BootStrap js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- js -->
